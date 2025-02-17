@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>challenge1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Join <span> Fitness Fusion </span>challenge </h1>
+        <p>Sign Up now to <span>WIN </span>exclusive fitness gears!</p>
+        <label for="signup-modal" class="open-modal">SIGN UP</label>
+    </div>
+    <input type="checkbox" id="signup-modal" class="modal-checkbox">
+    <div class="modal">
+        <div class="modal-content">
+            <label for="signup-modal" class="close-modal">&times;</label>
+            <h2>Sign Up for the challenge</h2>
+            <form action="#confirmation">
+                <label for="name">Full Name: </label>
+                <input type="text" class="name" required>
+                <label for="email">Email: </label>
+                <input type="email" class="email" required>
+                <label for="goal">Fitness Goal</label>
+                <select id="goal">
+                    <option>Lose weight</option>
+                    <option>Build Muscles</option>
+                    <option>Improve Endurance</option>
+                    <option>To stay active</option>
+                </select>
+                
+                <button type="submit">Join Now</button>
+            </form>
+        </div>
+    </div>
+    <div id="confirmation" class="confirmation" >
+        <h2>Thank you for joining <span>Fitness Fusion</span></h2>
+        <p>We'll email you soon with challenge.</p>
+        <a href="#" class="close-confirmation">Back to Home</a>
+    </div>
+</body>
+</html>
